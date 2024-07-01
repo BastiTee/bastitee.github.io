@@ -13,10 +13,14 @@
             }
         }
         console.log(`Prompt index: ${index}`);
+        console.log(prompts[index]);
 
         // Write prompt to HTML
         document.getElementById('category').innerHTML = "<p>" + prompts[index].category + "<p>";
         document.getElementById('prompt').innerHTML = "<p>" + prompts[index].prompt + "<p>";
+        if (prompts[index].purpose) {
+            document.getElementById('purpose').innerHTML = "<p>" + prompts[index].purpose + "<p>";
+        }
 
         // Write URL to clipboard
         new Clipboard('.clipboard');

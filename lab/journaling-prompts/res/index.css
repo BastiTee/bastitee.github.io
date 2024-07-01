@@ -1,9 +1,9 @@
-#clipboard-input {
-    position: absolute;
-    top: -999px;
-}
+/*
+ * BASICS
+ */
 
 body {
+    margin: 1.0em;
     text-align: center;
     overflow: hidden;
     /* Web Font */
@@ -18,50 +18,82 @@ body::-webkit-scrollbar {
     background: transparent;
 }
 
+p {
+    margin: 1.0em;
+}
+
+#category p,
+#purpose p {
+    color: #888888;
+}
+
+/*
+ * PAGE BUTTONS
+ */
+
+#clipboard-input {
+    position: absolute;
+    top: -999px;
+}
+
+
+#page-button-panel {
+    position: absolute;
+    bottom: 1.0em;
+    width: 100%;
+    left: 50%;
+    margin-left: -50%;
+}
+
 .page-button {
     width: 8em;
+    height: 3em;
     background-color: #888888;
-    font-size: 125%;
     border: none;
     color: #FFFFFF;
-    padding: 0.5em 0.5em;
+    padding: 1.0em 1.0em;
     text-align: center;
     text-decoration: none;
     display: inline-block;
 }
 
-#btn-reload.page-button {
-    position: absolute;
-    bottom: 0.5em;
-    left: 0.5em;
+.page-button:hover {
+    background-color: #3DA8C5;
+    cursor: pointer;
 }
 
-#btn-clip.page-button {
-    position: absolute;
-    bottom: 0.5em;
-    right: 0.5em;
-}
+/*
+ * FONT SIZES
+ */
 
 #category p {
-    color: #888888;
-    font-size: 125%;
+    font-size: 100%;
 }
 
 #prompt p {
     font-size: 250%;
 }
 
-@media only screen and (max-device-width: 480px) {
-    /* body {
-        background-color: lightblue;
-    } */
+#purpose p {
+    font-size: 100%;
+}
 
+.page-button {
+    font-size: 125%;
+}
+
+@media only screen and (max-device-width: 480px) {
     #category p {
-        font-size: 300%;
+        font-size: 160%;
     }
-    
+
     #prompt p {
         font-size: 450%;
+    }
+
+
+    #purpose p {
+        font-size: 160%;
     }
 
     .page-button {
