@@ -1,0 +1,18 @@
+#clipboard-input {
+    position: absolute;
+    top: -999px;
+}
+
+#standalone-body {
+    text-align: center;
+    overflow: hidden;
+}
+
+#standalone-body::-webkit-scrollbar {
+    width: 0px;
+    background: transparent;
+}
+
+.page-button {
+    width: 8em;
+}
