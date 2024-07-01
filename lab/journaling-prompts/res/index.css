@@ -3,16 +3,68 @@
     top: -999px;
 }
 
-#standalone-body {
+body {
     text-align: center;
     overflow: hidden;
+    /* Web Font */
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
 }
 
-#standalone-body::-webkit-scrollbar {
+body::-webkit-scrollbar {
     width: 0px;
     background: transparent;
 }
 
 .page-button {
     width: 8em;
+    background-color: #888888;
+    font-size: 125%;
+    border: none;
+    color: #FFFFFF;
+    padding: 0.5em 0.5em;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+#btn-reload.page-button {
+    position: absolute;
+    bottom: 0.5em;
+    left: 0.5em;
+}
+
+#btn-clip.page-button {
+    position: absolute;
+    bottom: 0.5em;
+    right: 0.5em;
+}
+
+#category p {
+    color: #888888;
+    font-size: 125%;
+}
+
+#prompt p {
+    font-size: 250%;
+}
+
+@media only screen and (max-device-width: 480px) {
+    /* body {
+        background-color: lightblue;
+    } */
+
+    #category p {
+        font-size: 200%;
+    }
+    
+    #prompt p {
+        font-size: 350%;
+    }
+
+    .page-button {
+        font-size: 200%;
+    }
 }
