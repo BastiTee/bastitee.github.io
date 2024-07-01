@@ -1,0 +1,74 @@
+<!doctype html>
+
+<head>
+    <meta charset="utf-8">
+    <base target="_blank">
+    <title>Monday Motivation Generator</title>
+
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+    <script src="https://bastitee.github.io/d3-workbench-ghp/0.10.0/d3-wb.min.js"></script>
+    <script src="https://bastitee.github.io/d3-workbench-ghp/0.10.0/d3-wb-modules.min.js"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/clipboard@1/dist/clipboard.min.js"></script>
+
+    <style>
+        #standalone-body {
+            text-align: center;
+            overflow: hidden;
+        }
+
+        #standalone-body::-webkit-scrollbar {
+            width: 0px;
+            background: transparent;
+        }
+
+        #standalone-svg {
+            margin-left: auto;
+            margin-top: auto;
+        }
+
+        .page-button {
+            position: absolute;
+            bottom: 0.1em;
+            border: none;
+            display: inline-block;
+            padding: 0.3em 0.6em;
+            font-size: 200%;
+            vertical-align: middle;
+            overflow: hidden;
+            text-decoration: none;
+            color: white;
+            background-color: rgba(0, 0, 0, 0.55);
+            text-align: center;
+            cursor: pointer;
+            white-space: nowrap;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        }
+
+        @media only screen and (max-width: 35em) {
+            .page-button {
+                font-size: 450%;
+            }
+        }
+
+
+        #clipboard-input {
+            position: absolute;
+            top: -999px;
+        }
+    </style>
+
+</head>
+
+<body id="standalone-body">
+    <input id="clipboard-input">
+    <button type="button" onClick="window.location.reload()" class="page-button" style="left: 0.1em;">
+        <i class="fas fa-sync-alt"></i>
+    </button>
+    <button class="clipboard page-button" data-clipboard-target="#clipboard-input" style="right: 0.1em;">
+        <i class="far fa-copy"></i>
+    </button>
+    <svg id="standalone-svg"></svg>
+</body>
+
+<script src="svg.js"></script>
