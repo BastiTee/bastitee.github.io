@@ -54,6 +54,7 @@ p {
     text-align: center;
     text-decoration: none;
     display: inline-block;
+    border-radius: 2.5em;
 }
 
 .page-button:hover {
@@ -66,7 +67,7 @@ p {
  */
 
 #category p {
-    font-size: 100%;
+    font-size: 125%;
 }
 
 #prompt p {
@@ -74,7 +75,7 @@ p {
 }
 
 #purpose p {
-    font-size: 100%;
+    font-size: 125%;
 }
 
 .page-button {
@@ -83,7 +84,7 @@ p {
 
 @media only screen and (max-device-width: 480px) {
     #category p {
-        font-size: 160%;
+        font-size: 225%;
     }
 
     #prompt p {
@@ -92,7 +93,7 @@ p {
 
 
     #purpose p {
-        font-size: 160%;
+        font-size: 225%;
     }
 
     .page-button {
