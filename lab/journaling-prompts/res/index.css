@@ -57,14 +57,14 @@ body::-webkit-scrollbar {
     } */
 
     #category p {
-        font-size: 200%;
+        font-size: 300%;
     }
     
     #prompt p {
-        font-size: 350%;
+        font-size: 450%;
     }
 
     .page-button {
-        font-size: 200%;
+        font-size: 300%;
     }
 }
